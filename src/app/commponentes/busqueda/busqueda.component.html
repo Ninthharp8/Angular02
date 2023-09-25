@@ -1,0 +1,39 @@
+
+<header>
+    <div class="container">
+        <h2>Buscar en la API </h2>
+        <p>por favor use el buscador para realizar una consulta en la API</p>
+        <form>
+          <div class="form-group">
+            
+            <input type="search" placeholder="search" class="form-control" id="usr" [(ngModel)]="txtBusqueda" >
+            <p>
+                <button class="btn btn-outline-primary" type="submit" (click)="busqueda()">Search</button>
+                <button class="btn btn-outline-primary" (click)="regresar()">Regresar a la página principal</button>
+            </p>
+    
+          </div>
+        </form>
+    </div>
+</header>
+<div *ngIf="resultado; else elseBlock">
+
+<h3>Resultados: {{resultado!.total_count}}</h3>
+
+<ul>
+    <li [ngStyle]="{'background-color': (i%2===0)?'red':'blue'}" class="lista" *ngFor="let elemento of resultado!.items,index as i;">
+        <a [href]="elemento.html_url">
+            <img [src]="elemento.owner.avatar_url"/>
+            <h4>{{elemento.name}}
+                <small> by {{elemento.owner.login}}</small>
+            </h4>
+        </a>
+        <p> {{elemento.description}}</p>
+        <p>Created On: {{elemento.created_at | date:'fullDate'}}</p>    
+    </li>
+</ul>
+</div>
+<ng-template #elseBlock>loading...</ng-template>
+
+
+  

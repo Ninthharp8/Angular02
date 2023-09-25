@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color:#1e1e1e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+#search-form {
+    display: flex;
+    width: 70%;
+}
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+p {
+    
+    
+    border: 10px ;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
