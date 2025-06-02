@@ -1,0 +1,29 @@
+
+
+<div class="container">
+  <input name="query" placeholder="Search" [(ngModel)]="txtBusqueda" />
+  <button (click)="busqueda()">Submit</button>
+</div>
+
+<div class="result-container">
+  <ul>
+    <div *ngIf="resultado; else elseBlock">
+      <h3>Resultados: {{resultado!.total_count}}</h3>
+      <ul>
+          <li [ngStyle]="{'background-color' : (i % 2 === 0) ? ' white' : ' white '}" class="lista" *ngFor="let elemento of resultado!.items; index as i;">
+              <a [href]="elemento.html_url">     
+                  <div class="top-content">
+                    <h4>{{elemento.name}} 
+                        <small> by {{elemento.owner.login}}</small> 
+                    </h4>
+                  </div>
+                  <img [src]="elemento.owner.avatar_url" /> 
+              </a>
+              <p> {{elemento.description}} </p>
+              <p> . Created On: {{elemento.created_at | date:'fullDate'}} </p>
+          </li>
+      </ul>
+    </div>
+  </ul>
+</div>
+<ng-template #elseBlock></ng-template>

@@ -1,0 +1,25 @@
+/* Estilos para el mensaje de error 404 */
+.not-found {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .not-found img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  .not-found h1 {
+    font-size: 36px;
+    color: #ff0000;
+    margin-top: 20px; 
+    margin-bottom: 10px; 
+  }
+  
+  .not-found p {
+    font-size: 18px;
+    color: #333; 
+  }
+  

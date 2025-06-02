@@ -1,0 +1,28 @@
+/* Estilos para la sección de temas sugeridos */
+.suggested-topics {
+  background-color: #f2f2f2; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.suggested-topics h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.suggested-topics ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.suggested-topics li {
+  margin-bottom: 10px;
+}
+
+
+.suggested-topics a:hover {
+  color: #2980b9; 
+}

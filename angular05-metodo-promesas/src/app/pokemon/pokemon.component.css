@@ -1,0 +1,36 @@
+html{
+    
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #efefef;
+}
+header {
+    background-color: #364552;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+/* Estilos para el contenedor del buscador */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el input y el botón */
+  }
+  
+  /* Estilos para el input */
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* El input ocupará todo el espacio disponible en el contenedor */
+  }
+  
+
+
+  
